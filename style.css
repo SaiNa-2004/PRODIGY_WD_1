@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Dongle-light";
+  src: url("Dongle/Dongle-Light.tff");
+
+}
+@font-face {
+  font-family: "Dongle-regular";
+  src: url("Dongle/Dongle-Regular.tff");
+
+}
+@font-face {
+  font-family: "Dongle-bold";
+  src: url("Dongle/Dongle-Bold.tff");
+
+}
+header{
+  display: flex;
+  padding: 20px;
+  background-color:#fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  align-items: center;
+}
+.logo img{
+  max-width:15%;
+}
+.nav-menu ul{
+  display: flex;
+
+}
+.nav-menu li{
+  list-style: none;
+  margin-right: 20px;
+  }
+  .nav-menu li:last-child{
+    margin-right: 0;
+  }
+.nav-menu a{
+  text-decoration: none;
+  font-family: "Dongle-Bold";
+  font-size: 1.6rem;
+  color:#333;
+  transition: all ease 0.3s;
+}
+.nav-menu a:hover{
+  color:#f84403;
+
+}
+.hero{
+  position:relative;
+  height:600px;
+  overflow: hidden;
+}
+.hero-image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+.hero-content h1{
+  font-family: "Dongle-bold";
+  font-size: 3rem;
+}
+.hero-content p{
+  font-family: "Dongle-regular";
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.hero-button{
+  display:inline-block;
+  text-decoration: none;
+  color:#fff;
+  background-color:#fb4503;
+  padding: 12px 30px;
+  border-radius:50px ;
+  font-family:"dongle-light";
+  font-size: 1.6rem;
+  transition: all ease 0.3s;
+}
+.hero-button:hover{
+  background-color: #333;
+
+}
+.destinations{
+  font-size: 2.4rem;
+  font-family: "Dongle-bold";
+  margin: 40px 80px;
+  text-align:center;
+}
+.destinations h2{
+  margin-bottom: 40px;
+}
+.destination-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:40px;
+
+}
+.destination-item img{
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.destination-item{
+  text-align: left;
+}
+.destination-item h3{
+  font-size:1.4rem;
+  margin:4px;
+}
+.destination-item p{
+  font-size: 1rem;
+  line-height: 1;
+}
+.about-us{
+  text-align:center;
+  padding: 80px;
+}
+.about h3{
+  font-size:2.1rem;
+  text-align: center;
+  margin:20px;
+}
+.about p{
+  font-size: 1rem;
+  line-height:1;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.team-members{
+  display:flex;
+  flex-wrap:wrap;
+}
+.team-member img{
+  width: 200px;
+  height:200px;
+  margin:40px;
+  object-fit: cover;
+  border-radius:50%;
+}
+.team-member h4{
+  text-align: center;
+}
+.contact{
+  padding: 80px;
+  text-align:center;
+  background-color:pink;
+}
+.contact h3{
+font-size: 2.6rem;
+margin-bottom: 20px;
+}
+.contact-info p{
+  font-size:1.4rem;
+  margin-bottom:20px;
+}
+.contact-info ul{
+list-style:none;
+border:none;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 40px;
+
+}
+.contact-info li{
+  margin:0 20px;
+  display:flex;
+  align-items:center;
+}
+.contact-info li a{
+  text-decoration: none;
+}
+.contact-info img{
+  margin-right: 10px;
+  border-radius:10px ;
+
+}
+.form{
+  width: 100%;
+}
+input,textarea{
+  width: 70%;
+  padding: 15px 0px;
+  margin:20px 0px;
+  border:none;
+  border-radius: 7px;
+  box-shadow: 0 0 5px #e42121 ;
+}
+.form button{
+  display:inline-block;
+  text-decoration: none;
+  color:#fff;
+  background-color:#fb4503;
+  padding: 12px 30px;
+  border-radius:50px ;
+  font-family:"dongle-light";
+  font-size: 1.6rem;
+  transition: all ease 0.3s;
+  border: none;
+}
+.form button:hover{
+  background-color: #333;
+}
+.footer{
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+footer p{
+  font-size: 1.4rem;
+}
